@@ -7,7 +7,7 @@
     <title>Explore Destinations</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body {
+         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f7f7f7;
             display: flex;
@@ -74,56 +74,13 @@
             background-color: #0056b3; /* Darker shade on hover */
             transform: scale(1.05); /* Slight scale effect */
         }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.8em; /* Adjust heading size for smaller screens */
-            }
-
-            table, th, td {
-                display: block; /* Change display to block for table elements */
-                width: 100%; /* Full width for smaller screens */
-                box-sizing: border-box; /* Include padding in width calculation */
-            }
-
-            th {
-                position: absolute; /* Position headers absolutely */
-                top: -9999px; /* Move off-screen */
-                left: -9999px; /* Move off-screen */
-            }
-
-            tr {
-                margin-bottom: 15px; /* Add margin between rows */
-                border: 1px solid #ddd; /* Add border to rows */
-                border-radius: 8px; /* Add border radius */
-                overflow: hidden; /* Ensure border-radius is applied */
-                background-color: white; /* White background for rows */
-            }
-
-            td {
-                text-align: right; /* Align text to the right */
-                position: relative; /* Position relative for pseudo-elements */
-                padding-left: 50%; /* Space for labels */
-            }
-
-            td::before {
-                content: attr(data-label); /* Use data-label for headers */
-                position: absolute;
-                left: 10px; /* Space from left */
-                width: calc(50% - 20px); /* Adjust width */
-                padding-right: 10px; /* Space for text */
-                text-align: left; /* Align text to the left */
-                font-weight: bold; /* Make header bold */
-            }
-        }
     </style>
 </head>
 <body>
     <jsp:include page="navbar.jsp" />
 
-    <br/>
-    <br/>
+<br/>
+<br/>
     <h1>Explore Destinations</h1>
 
     <table>
@@ -139,45 +96,45 @@
         </thead>
         <tbody>
             <tr>
-                <td data-label="Place">Bali, Indonesia</td>
-                <td data-label="Date">2024-12-01</td>
-                <td data-label="Duration">7 days</td>
-                <td data-label="Budget">$1200</td>
-                <td data-label="Interested">
+                <td>Bali, Indonesia</td>
+                <td>2024-12-01</td>
+                <td>7 days</td>
+                <td>$1200</td>
+                <td>
                     <button class="button interested">Interested</button>
                 </td>
-                <td data-label="View Profile">
+                <td>
                     <button class="button view-profile">View Profile</button>
                 </td>
             </tr>
             <tr>
-                <td data-label="Place">Paris, France</td>
-                <td data-label="Date">2024-10-15</td>
-                <td data-label="Duration">5 days</td>
-                <td data-label="Budget">$2000</td>
-                <td data-label="Interested">
+                <td>Paris, France</td>
+                <td>2024-10-15</td>
+                <td>5 days</td>
+                <td>$2000</td>
+                <td>
                     <button class="button interested">Interested</button>
                 </td>
-                <td data-label="View Profile">
+                <td>
                     <button class="button view-profile">View Profile</button>
                 </td>
             </tr>
             <tr>
-                <td data-label="Place">Tokyo, Japan</td>
-                <td data-label="Date">2024-11-20</td>
-                <td data-label="Duration">10 days</td>
-                <td data-label="Budget">$1500</td>
-                <td data-label="Interested">
+                <td>Tokyo, Japan</td>
+                <td>2024-11-20</td>
+                <td>10 days</td>
+                <td>$1500</td>
+                <td>
                     <button class="button interested">Interested</button>
                 </td>
-                <td data-label="View Profile">
+                <td>
                     <button class="button view-profile">View Profile</button>
                 </td>
             </tr>
             <!-- Add more destinations as needed -->
         </tbody>
     </table>
-    <jsp:include page="footer.jsp" />
-
+      <jsp:include page="footer.jsp" />
+  
 </body>
 </html>
